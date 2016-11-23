@@ -1,0 +1,14 @@
+---
+triggers:
+  - on: "uname"
+    shell: "uname -a"
+
+  - on: "temp"
+    shell: "ls /tmp"
+
+  - on: "long-running"
+    shell: "./long-running.sh"
+
+  - on: "test"
+    shell: "make test"
+    chdir: "/tmp/foobar"
